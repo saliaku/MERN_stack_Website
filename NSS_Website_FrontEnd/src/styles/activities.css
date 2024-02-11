@@ -1,5 +1,7 @@
 /* activities.css */
-
+.p {
+    text-align: justify;
+}
 .activities-container {
     display: block; /* Display as block to stack items vertically */
     margin: 20px auto;

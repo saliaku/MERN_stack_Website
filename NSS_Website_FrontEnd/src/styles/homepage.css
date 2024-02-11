@@ -1,4 +1,21 @@
 /* styles.css */
+
+/* Adjust the opacity and color of the overlay */
+.homepage-bg {
+  position: fixed; /* Fixed position to cover the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Set the width to fill the entire viewport */
+  height: 100%; /* Set the height to fill the entire viewport */
+  background-image: url('../images/image2.jpeg'); /* Background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  opacity: 0.15; /* Adjust the opacity to make it semi-transparent */
+  z-index: 0; /* Set a negative z-index to keep it behind other elements */
+}
+
+
+
 .header-content-container {
     display: flex; /* Use flexbox */
     justify-content: space-around; /* Distribute items evenly with equal space around them */

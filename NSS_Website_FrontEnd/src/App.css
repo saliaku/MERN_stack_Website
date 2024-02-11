@@ -200,6 +200,7 @@ i {
   display: flex; /* Make header a flex container */
   justify-content: space-between; /* Align items at each end of the flex container */
   align-items: center; /* Center items vertically */
+  z-index: 999; /* Set a higher z-index to keep it on top of other elements */
 }
 
 .logo {
