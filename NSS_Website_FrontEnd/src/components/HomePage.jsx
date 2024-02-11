@@ -39,38 +39,38 @@ function HomePage() {
         <div className='header-content'>
           {/* Staff in charge card */}
           <div className='card'>
-            <h3>Faculty in Charge</h3>
-            <p>Name: Dr. Reju</p>
-            <p>Role: Coordinator</p>
-            <p>Email: reju@nitc.ac.in</p>
+            <h4>Faculty in Charge</h4>
+            <p className='p-inline'>Name: Dr. Reju</p>
+            <p className='p-inline'>Role: Coordinator</p>
+            <p className='p-inline'>Email: reju@nitc.ac.in</p>
           </div>
 
           {/* Unit 1 card */}
           <div className='card'>
-            <h3>Unit 1</h3>
-            <p>Unit Head: </p>
-            <p>Contact: </p>
+            <h4>Unit 1</h4>
+            <p className='p-inline'>Unit Head: Marvan </p>
+            <p className='p-inline'>Contact: </p>
           </div>
 
           {/* Unit 2 card */}
           <div className='card'>
-            <h3>Unit 2</h3>
-            <p>Unit Head: </p>
-            <p>Contact: </p>
+            <h4>Unit 2</h4>
+            <p className='p-inline'>Unit Head: </p>
+            <p className='p-inline'>Contact: </p>
           </div>
 
           {/* Unit 3 card */}
           <div className='card'>
-            <h3>Unit 3</h3>
-            <p>Unit Head: </p>
-            <p>Contact: </p>
+            <h4>Unit 3</h4>
+            <p className='p-inline'>Unit Head: </p>
+            <p className='p-inline'>Contact: </p>
           </div>
 
           {/* Unit 4 card */}
           <div className='card'>
-            <h3>Unit 4</h3>
-            <p>Unit Head: </p>
-            <p>Contact: </p>
+            <h4>Unit 4</h4>
+            <p className='p-inline'>Unit Head: </p>
+            <p className='p-inline'>Contact: </p>
           </div>
         </div>
       </div>

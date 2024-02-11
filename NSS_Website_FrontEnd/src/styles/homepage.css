@@ -9,7 +9,13 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  h4 {
+    display: inline;
+    font-weight: bold;
+  }
   
+
   .card {
     background-color: #fff;
     padding: 20px;
@@ -19,10 +25,17 @@
     transition: transform 0.3s ease;
     /* flex: 0 1 300px; Set a flex basis to control the width of each card */
     flex: 1; /* Allow the card to expand to fill the available space */
+    height: 200px; /* Set the height equal to the width */
+    width: 250px; /* Set the width of the card */
   }
   
   .card:hover {
     transform: translateY(-10px);
+  }
+  
+  .card p-inline {
+    display: inline-block;
+    /* margin-right: 10px; Adjust margin as needed */
   }
   
   
