@@ -1,7 +1,29 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import '../App.css';
 
 const Footer = () => {
+  useEffect(() => {
+    const handleFooterPosition = () => {
+      const contentHeight = document.body.scrollHeight;
+      const viewportHeight = window.innerHeight;
+      const footer = document.querySelector('.footer');
+      
+      if (contentHeight <= viewportHeight) {
+        footer.classList.add('fixed');
+      } else {
+        footer.classList.remove('fixed'); // Remove 'fixed' class when condition is not met
+      }
+    };
+
+    handleFooterPosition();
+
+    window.addEventListener('resize', handleFooterPosition);
+    
+    return () => {
+      window.removeEventListener('resize', handleFooterPosition);
+    };
+  }, []);
+
   return (
     <footer className='footer'>
       <div className="container">
@@ -16,5 +38,6 @@ const Footer = () => {
     </footer>
   );
 }
+
 
 export default Footer;

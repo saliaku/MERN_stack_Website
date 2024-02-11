@@ -30,7 +30,8 @@
   }
   
   .card:hover {
-    transform: translateY(-10px);
+    transform: scale(1.5); /* Increase the size of the card on hover */
+    z-index: 2; /* Set a higher z-index on hover */
   }
   
   .card p-inline {

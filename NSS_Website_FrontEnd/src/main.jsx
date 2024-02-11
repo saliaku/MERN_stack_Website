@@ -11,12 +11,14 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import About from "./components/About";
 import HomePage from "./components/HomePage";
 import Contact from "./components/Contact";
+import Activities from "./components/Activities";
 
 // Routes
 const router = createBrowserRouter([
   { path: "/", element: <HomePage /> },
   { path: "/about", element: <About /> },
   { path: "/contact", element: <Contact /> },
+  { path: "/activities", element: <Activities /> },
 ]);
 
 // const author = "Saliaku";

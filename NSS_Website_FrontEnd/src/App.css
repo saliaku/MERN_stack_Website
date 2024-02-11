@@ -9,12 +9,28 @@
 }
 
 
+.footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: right;
+  z-index: 999;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .container {
-  width: 100%; /* Set the width to 100% */
-  max-width: none; /* Remove the maximum width */
+  width: 100%;
+  max-width: none;
   margin: 0 auto;
   padding: 0;
 }
+
+
 
 
 .logo:hover {
@@ -42,6 +58,23 @@
 
 .card {
   padding: 2em;
+  transition: transform 0.3s ease;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card.hovered {
+  animation: pulse 1s infinite alternate; /* Apply the pulse animation */
 }
 
 .read-the-docs {
@@ -105,15 +138,7 @@
 }
 
 
-.footer {
-  position: fixed; /* Position the footer relative to the viewport */
-  bottom: 0; /* Anchor the footer to the bottom of the viewport */
-  width: 100%; /* Make the footer span the entire width */
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  text-align: right;
-}
+
 
 .beautiful-heading {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */

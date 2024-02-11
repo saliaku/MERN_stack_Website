@@ -4,7 +4,18 @@ import '../styles/homepage.css'
 import Header from './Header'; // Import Header component
 import Footer from './Footer'; // Import Footer component
 
+
+
+ 
+ 
+
 function HomePage() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleHover = () => {
+    setIsHovered(!isHovered);
+  }
+
   return (
     <div className='container'>
       {/* Header Section */}
