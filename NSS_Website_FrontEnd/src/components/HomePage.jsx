@@ -3,36 +3,40 @@ import '../App.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import BookCard from './BookCard';
+import Header from './Header'; // Import Header component
+import Footer from './Footer'; // Import Footer component
 
 function HomePage() {
   return (
-
-
-
-    <div className='HomePage'>
+    <div className='container'>
       {/* Header Section */}
+      <Header />
 
-      <header className='text-center'>
-        <div className='logo'>
-          <img src="/src/images/nss_logo.png" alt="NSS Logo" />
+
+      {/* Main Content Section */}
+      <main className='main-content'>
+        {/* Add your main content here */}
+
+        <div className='header-content'>
+          <h1>Hello there volunteers....!</h1>
+          <i>Not me, but you</i>
+          <h2>Welcome to NSS NITC</h2>
+          <p>
+            National Service Scheme (NSS) is a central sector scheme of the
+            Government of India, Ministry of Youth Affairs & Sports. It provides
+            opportunities for student youth to participate in various
+            government-led community services and programs. With this
+            organization, students can build their character, maintain
+            discipline, develop leadership skills, and become individuals who
+            understand human nature.
+          </p>
         </div>
-        <h1>Hello there volunteers....!</h1>
-        <i>Not me, but you</i>
-        <h2>Welcome to NSS NITC</h2>
-        <p>
-          National Service Scheme (NSS) is a central sector scheme of the
-          Government of India, Ministry of Youth Affairs & Sports. It provides
-          opportunities for student youth to participate in various
-          government-led community services and programs. With this
-          organization, students can build their character, maintain
-          discipline, develop leadership skills, and become individuals who
-          understand human nature.
-        </p>
-      </header>
 
+      </main>
 
+      {/* Footer Section */}
+      <Footer/>
 
-      {/* Add your other sections or components below */}
     </div>
   );
 }
