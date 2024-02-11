@@ -13,7 +13,7 @@ const Header = () => {
         <ul>
           <li><a href="http://localhost:5174">Home</a></li>
           <li><Link to="/about">About</Link></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
     </header>

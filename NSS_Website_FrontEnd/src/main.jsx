@@ -9,17 +9,14 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 // Components imports
 import About from "./components/About";
-import ShowBookList from "./components/HomePage";
-import ShowBookDetails from "./components/ShowBookDetails";
-import UpdateBookInfo from "./components/UpdateBookInfo";
 import HomePage from "./components/HomePage";
+import Contact from "./components/Contact";
 
 // Routes
 const router = createBrowserRouter([
   { path: "/", element: <HomePage /> },
   { path: "/about", element: <About /> },
-  { path: "/show-book/:id", element: <ShowBookDetails /> },
-  { path: "/edit-book/:id", element: <UpdateBookInfo /> },
+  { path: "/contact", element: <Contact /> },
 ]);
 
 // const author = "Saliaku";

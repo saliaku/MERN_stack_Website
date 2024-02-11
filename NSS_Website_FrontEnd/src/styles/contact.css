@@ -1,0 +1,83 @@
+.contact-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.contact-info,
+.contact-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 30px; /* Reduce margin to prevent excessive space */
+  color: #666;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.contact-info ul li i {
+  margin-right: 10px;
+  color: #f39c12;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensure padding and border are included in width calculation */
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #f39c12;
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #e58e0c;
+}
+
+@media (max-width: 768px) {
+  .contact-info,
+  .contact-form {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+  
+  .contact-info p {
+    margin-bottom: 20px; /* Reduce margin further for smaller screens */
+  }
+}
